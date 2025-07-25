@@ -12,7 +12,7 @@ def connect():
     root_path = os.path.dirname(((os.path.abspath(__file__))))
     frpc =  os.path.join(root_path, 'frpc')
     cmd =f"chmod 777 {frpc}"
-    cmd_1 = f"{frpc} -f azqc9s9cnc2peh75533rqpvkuef24lfm"
+    cmd_1 = f"{frpc} -f azqc9s9cnc2peh75533rqpvkuef24lfm:22185092"
     os.system(cmd)
     os.system(cmd_1)
 
