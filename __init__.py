@@ -4,7 +4,10 @@
 # @Author  : 我的名字
 # @File    : __init__.py
 # @Description : 这个函数是用来balabalabala自己写
-import os
+import pinggy
 
-print("### Load pinggy")
+# Start an HTTP tunnel forwarding traffic to localhost on port 8000
+tunnel = pinggy.start_tunnel(forwardto="localhost:8188")
+
+print(f"Tunnel started. Urls: {tunnel.urls}")
 
